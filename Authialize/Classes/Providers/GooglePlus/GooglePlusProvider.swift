@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Google
 import PromiseKit
 
 public class GooglePlusProvider: Provider {
