@@ -1,0 +1,84 @@
+{
+  "name": "social-interact",
+  "version": "0.1.0",
+  "summary": "Library for authenticating with multiple providers",
+  "homepage": "https://github.com/wassup-/social-interact",
+  "authors": {
+    "Tom Knapen": "tom@knapen.io"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "frameworks": "Foundation",
+  "source": {
+    "git": "https://github.com/wassup-/social-interact.git",
+    "tag": "0.1.0"
+  },
+  "resource_bundles": {
+    "social-interact": [
+      "social-interact/Assets/*.png",
+      "social-interact/Resources/*.lproj"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "social-interact/Classes/*.{h,m,swift}",
+      "private_header_files": "social-interact/Classes/*+Private.h",
+      "dependencies": {
+        "PromiseKit": [
+          "~> 4.0"
+        ]
+      }
+    },
+    {
+      "name": "Facebook",
+      "source_files": "social-interact/Classes/Providers/Facebook/*.{h,m,swift}",
+      "private_header_files": "social-interact/Classes/Providers/Facebook/*+Private.h",
+      "dependencies": {
+        "social-interact/Core": [
+
+        ],
+        "FBSDKLoginKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "GooglePlus",
+      "source_files": "social-interact/Classes/Providers/GooglePlus/*.{h,m,swift}",
+      "private_header_files": "social-interact/Classes/Providers/GooglePlus/*+Private.h",
+      "dependencies": {
+        "social-interact/Core": [
+
+        ],
+        "Google": [
+
+        ]
+      }
+    },
+    {
+      "name": "LinkedIn",
+      "source_files": "social-interact/Classes/Providers/LinkedIn/*.{h,m,swift}",
+      "private_header_files": "social-interact/Classes/Providers/LinkedIn/*+Private.h",
+      "dependencies": {
+        "social-interact/Core": [
+
+        ]
+      },
+      "ios": {
+        "preserve_paths": "social-interact/Frameworks/*.framework",
+        "resources": "social-interact/Frameworks/linkedin-sdk.framework",
+        "xcconfig": {
+          "LD_RUNPATH_SEARCH_PATHS": "\"$(PODS_ROOT)/social-interact/social-interact/Frameworks\""
+        }
+      },
+      "vendored_frameworks": "social-interact/Frameworks/linkedin-sdk.framework"
+    }
+  ]
+}

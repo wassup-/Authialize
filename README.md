@@ -1,9 +1,9 @@
-# social-interact
+# Authialize
 
-[![CI Status](http://img.shields.io/travis/Tom Knapen/social-interact.svg?style=flat)](https://travis-ci.org/Tom Knapen/social-interact)
-[![Version](https://img.shields.io/cocoapods/v/social-interact.svg?style=flat)](http://cocoapods.org/pods/social-interact)
-[![License](https://img.shields.io/cocoapods/l/social-interact.svg?style=flat)](http://cocoapods.org/pods/social-interact)
-[![Platform](https://img.shields.io/cocoapods/p/social-interact.svg?style=flat)](http://cocoapods.org/pods/social-interact)
+[![CI Status](http://img.shields.io/travis/Tom Knapen/Authialize.svg?style=flat)](https://travis-ci.org/Tom Knapen/Authialize)
+[![Version](https://img.shields.io/cocoapods/v/Authialize.svg?style=flat)](http://cocoapods.org/pods/Authialize)
+[![License](https://img.shields.io/cocoapods/l/Authialize.svg?style=flat)](http://cocoapods.org/pods/Authialize)
+[![Platform](https://img.shields.io/cocoapods/p/Authialize.svg?style=flat)](http://cocoapods.org/pods/Authialize)
 
 ## Example
 
@@ -13,17 +13,17 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-social-interact is available through [CocoaPods](http://cocoapods.org). To install
+Authialize is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "social-interact"
+pod "Authialize"
 ```
 
 ## Author
 
-Tom Knapen, tom@failproof.be
+Tom Knapen, tom@knapen.io
 
 ## License
 
-social-interact is available under the MIT license. See the LICENSE file for more info.
+Authialize is available under the MIT license. See the LICENSE file for more info.

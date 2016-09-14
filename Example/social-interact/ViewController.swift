@@ -6,6 +6,7 @@
 //  Copyright (c) 2016 Tom Knapen. All rights reserved.
 //
 
+import SocialInteract
 import UIKit
 
 class ViewController: UIViewController {
