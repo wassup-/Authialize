@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.name                  = 'Authialize'
   s.version               = '0.1.11'
   s.summary               = 'Library for authenticating with multiple providers'
-  s.homepage              = 'https://github.com/wassup-/social-interact'
+  s.homepage              = 'https://github.com/wassup-/Authialize'
   s.author                = {
     'Tom Knapen' => 'tom@knapen.io'
   }
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # files
   s.frameworks            = 'Foundation'
   s.source                = {
-    :git => 'https://github.com/wassup-/social-interact.git',
+    :git => 'https://github.com/wassup-/Authialize.git',
     :tag => s.version.to_s
   }
   s.resource_bundles      = {
